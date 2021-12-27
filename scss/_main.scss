@@ -1,0 +1,33 @@
+
+main{
+    background-color: $blanco;
+    padding: 5px 100px;
+    animation-name: textAlpha;
+    animation-duration: 1.5s;
+    div{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.copa{
+    transform: translateX(-120px);
+}
+
+.scale:hover{
+    transform: scale(1.1);
+}
+
+.noticia__epigrafe--color{
+    color: $negro;
+}
+
+.cuadro__nombre--color{
+    color: $negro;
+}
+
+.plantel{
+    margin-bottom: 130vh;
+}
+

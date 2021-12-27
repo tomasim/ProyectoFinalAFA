@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Roboto:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  background-color: white; }
+
+.textDark {
+  color: #0b2752; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.textCenter {
+  text-align: center; }
+
+.textLeft {
+  text-align: left; }
+
+.textRight {
+  text-align: right; }
+
+.displayFlex {
+  display: flex; }
+
+.flexCenter {
+  justify-content: center; }
+
+.grid {
+  display: grid; }
+
+#logoAfa {
+  grid-area: logoAfa; }
+
+#redesAfa {
+  grid-area: redesAfa;
+  padding-top: 10px; }
+
+#textoAfa {
+  grid-area: textoAfa;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.1em; }
+
+h1 {
+  color: #0b2752;
+  font-weight: 800;
+  font-size: 3em;
+  text-align: center; }
+
+h2 {
+  color: #70aeff;
+  font-weight: 800;
+  font-size: 2em;
+  text-align: center; }
+
+h3 {
+  color: white;
+  font-size: 1em;
+  font-weight: 400; }
+
+.text-1 {
+  font-size: 1em; }
+
+.text-2 {
+  font-size: 2em; }
+
+.text-3 {
+  font-size: 3em; }
+
+p {
+  color: #0b2752;
+  line-height: 1.5em;
+  padding: 10px;
+  text-align: center; }
+
+.noticia__titulo--upercase {
+  text-transform: uppercase; }
+
+.seccion__titulo--upercase {
+  text-transform: uppercase; }
+
+.seccion__subtitulo--underline {
+  text-decoration: underline; }
+
+header {
+  background: linear-gradient(to top, #0b2752, #1e4682);
+  padding: 5px 50px; }
+  header ul a {
+    list-style-type: none;
+    text-decoration: none; }
+
+.gridHeader {
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-areas: "logoAfa textoAfa . . . . . . . . . . . . redesAfa redesAfa redesAfa redesAfa"; }
+
+.translate:hover {
+  transform: translateY(-5px); }
+
+nav {
+  background-color: #70aeff;
+  padding: 0px 50px; }
+  nav a {
+    font-weight: 600; }
+
+main {
+  background-color: white;
+  padding: 5px 100px;
+  animation-name: textAlpha;
+  animation-duration: 1.5s; }
+  main div {
+    padding: 20px;
+    display: flex;
+    justify-content: center; }
+
+.copa {
+  transform: translateX(-120px); }
+
+.scale:hover {
+  transform: scale(1.1); }
+
+.noticia__epigrafe--color {
+  color: black; }
+
+.cuadro__nombre--color {
+  color: black; }
+
+.plantel {
+  margin-bottom: 130vh; }
+
+article {
+  text-align: center; }
+
+#caja1 {
+  grid-area: caja1; }
+
+#caja2 {
+  grid-area: caja2; }
+
+#caja3 {
+  grid-area: caja3; }
+
+.gridSection {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 75vh 40vh;
+  grid-template-areas: "caja1 caja1" "caja2 caja3";
+  grid-gap: 2px; }
+
+#clubAmateur {
+  grid-area: clubesamateur; }
+
+#cantidadTitulosAmateur {
+  grid-area: titulosamateur; }
+
+.gridAmateur {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 175vh;
+  grid-template-areas: ". . clubesamateur titulosamateur . ."; }
+
+#clubProfesional {
+  grid-area: clubesprofesional; }
+
+#cantidadTitulosProfesional {
+  grid-area: titulosprofesional; }
+
+.gridProfesional {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 155vh;
+  grid-template-areas: ". . clubesprofesional titulosprofesional . ."; }
+
+#clubCopa {
+  grid-area: clubcopa; }
+
+#cantidadCopas {
+  grid-area: copas; }
+
+.gridCopas {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 300vh;
+  grid-template-areas: ". . clubcopa copas . ."; }
+
+.sponsors {
+  background-color: white;
+  justify-content: center;
+  clear: both;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  animation-name: textAlpha;
+  animation-duration: 1.5s; }
+
+footer {
+  background: linear-gradient(to bottom, #0b2752, #1e4682);
+  padding: 30px; }
+  footer a {
+    text-decoration: none; }
+
+#copyright {
+  font-size: 0.7em; }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media only screen and (min-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas: "caja1" "caja2" "caja3"; }
+  body {
+    width: 100%; }
+  header {
+    width: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  .plantel {
+    margin-bottom: 470vh; } }
+
+@media only screen and (min-width: 990px) {
+  .plantel {
+    margin-bottom: 150vh; } }

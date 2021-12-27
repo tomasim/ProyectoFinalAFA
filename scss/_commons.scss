@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+$azul: rgb(11,39,82);
+$celeste: rgb(112,174,255);
+$blanco: rgb(255,255,255);
+$degrade: rgb(30,70,130);
+$negro: black;
+
+
+body{
+    background-color: $blanco;
+}
+
+.textDark{
+    color: $azul;
+}
+
+a{
+    color: $blanco;
+    text-decoration: none;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.flexCenter{
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+}
+
+#logoAfa{
+    grid-area: logoAfa;
+}
+
+#redesAfa{
+    grid-area: redesAfa;
+    padding-top: 10px;
+}
+
+#textoAfa{
+    grid-area: textoAfa;
+    color: $blanco;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+

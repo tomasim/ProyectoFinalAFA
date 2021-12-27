@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Roboto:wght@500&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background: linear-gradient(to top, rgb(11,39,82), rgb(30,70,130));
+    padding: 5px 50px;
+}
+
+header ul a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(112,174,255);
+    padding: 0px 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav ul li a{
+    font-size: 1.2em;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    text-justify: center;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(11,39,82);
+}
+
+nav ul li a.active{
+    color: rgba(11,39,82);
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    padding: 5px 50px;
+    animation-name: textAlpha;
+    animation-duration: 1.5s;
+}
+
+h1{color: rgb(11,39,82); 
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{color: rgb(112, 174, 255);
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p{color: rgb(11,39,82);
+    line-height: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.noticia__titulo--upercase{
+    text-transform: uppercase;
+}
+
+.seccion__titulo--upercase{
+    text-transform: uppercase;
+}
+
+.textDark{color: rgb(11, 39, 82);}
+
+a{color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.textCenter{
+    text-align: center;
+}
+
+.textLef{
+    text-align: left;
+}
+
+.textRight{
+    text-align: right;
+}
+
+.sponsors{
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    clear: both;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    animation-name: textAlpha;
+    animation-duration: 1.5s;
+}
+
+footer{
+    background: linear-gradient(to bottom, rgb(11,39,82), rgb(30,70,130));
+    padding: 30px;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+article{
+    text-align: center;
+}
+
+#caja1{
+    grid-area: caja1;
+} 
+
+#caja2{
+    grid-area: caja2;
+} 
+
+#caja3{
+    grid-area: caja3;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.flexCenter{
+    justify-content: center;
+}
+
+main div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.gridHeader{
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-areas: "logoAfa textoAfa . . . . . . . . . . . . redesAfa redesAfa redesAfa";
+}
+
+.gridSection{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45vh 45vh;
+    grid-template-areas: "caja1 caja2" "caja1 caja3";
+    grid-gap: 2px;
+}
+
+#logoAfa{
+    grid-area: logoAfa;
+}
+
+#redesAfa{
+    grid-area: redesAfa;
+}
+
+
+#textoAfa{
+    grid-area: textoAfa;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+#copyright{
+    font-size: 0.7em;
+}
+
+.translate:hover{
+    transform: translateY(-5px);
+}
+
+.copa{
+    transform: translateX(-120px);
+}
+
+.scale:hover{
+    transform: scale(1.1);
+}
+
+.epigrafe{
+    color:black;
+    font-size: 0.8em;
+}
+
+.plantel{
+    margin-bottom: 150vh;
+}
+
+@keyframes textAlpha{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@media only screen and (min-width: 768px){
+   section{display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-areas: "caja1" "caja2" "caja3";}
+   }
+

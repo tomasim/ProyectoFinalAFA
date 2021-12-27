@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500&family=Roboto:wght@500&display=swap');
+
+h1{
+    color: $azul;
+    font-weight: 800;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    color: $celeste;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    color: $blanco;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+@for $i from 1 through 3{
+    .text-#{$i}{
+        font-size: 1em *$i;
+    }
+}
+
+p{
+    color:$azul;
+    line-height: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+
+.noticia__titulo--upercase{
+    text-transform: uppercase;
+}
+
+.seccion__titulo--upercase{
+    text-transform: uppercase;
+}
+
+.seccion__subtitulo--underline{
+    text-decoration: underline;
+}

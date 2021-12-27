@@ -1,0 +1,27 @@
+@media only screen and (min-width: 768px){
+    section{display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 30vh 30vh 30vh;
+         grid-template-areas: "caja1" "caja2" "caja3";}
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .plantel{
+        margin-bottom: 470vh;
+    }
+}
+
+
+@media only screen and (min-width: 990px){
+    .plantel{
+        margin-bottom: 150vh;
+    }
+}
+
+

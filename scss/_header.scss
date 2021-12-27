@@ -1,0 +1,20 @@
+
+header{
+    background: linear-gradient(to top, $azul, $degrade);
+    padding: 5px 50px;
+    ul{
+        a{
+            list-style-type: none;
+            text-decoration: none;
+        }
+    }
+}
+
+.gridHeader{
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-areas: "logoAfa textoAfa . . . . . . . . . . . . redesAfa redesAfa redesAfa redesAfa";
+}
+
+.translate:hover{
+    transform: translateY(-5px);
+}
